@@ -23,7 +23,7 @@ The application is deployed on Strapi Cloud for instant access:
 
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/loomstack-metamodel-personal.git
+git clone https://github.com/feruiz/loomstack-metamodel-personal.git
 cd loomstack-metamodel-personal
 
 # Install dependencies
