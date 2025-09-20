@@ -19,24 +19,20 @@ The application is deployed on Strapi Cloud for instant access:
 3. Create admin account and start defining schemas immediately
 
 ### Option 2: Local Development
-**Requirements:** Node.js >=18.0.0, npm/yarn
+**Requirements:** Node.js >=18.0.0, Yarn package manager
 
 ```bash
 # Clone the repository
 git clone https://github.com/feruiz/loomstack-metamodel-personal.git
 cd loomstack-metamodel-personal
 
-# Install dependencies
-npm install
-# or
+# Install dependencies (Yarn required)
 yarn install
 
 # Copy environment file
 cp .env.example .env
 
 # Start development server
-npm run develop
-# or
 yarn develop
 ```
 
@@ -64,11 +60,11 @@ This system allows high-level users to define schemas for components that **Loom
 ## 🛠️ Available Scripts
 
 ```bash
-npm run develop     # Start with auto-reload (development)
-npm run build      # Build admin panel for production
-npm run start      # Start without auto-reload (production)
-npm run console    # Open Strapi console
-npm run deploy     # Deploy using Strapi Cloud
+yarn develop     # Start with auto-reload (development)
+yarn build      # Build admin panel for production
+yarn start      # Start without auto-reload (production)
+yarn console    # Open Strapi console
+yarn deploy     # Deploy using Strapi Cloud
 ```
 
 ## 📚 Learn More

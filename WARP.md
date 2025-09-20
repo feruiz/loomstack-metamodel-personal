@@ -32,36 +32,36 @@ This is a **Strapi 5** headless CMS application built with TypeScript. It serves
 
 ### Initial Setup
 ```bash
-npm install  # Install dependencies
+yarn install  # Install dependencies
 ```
 
 ### Development
 ```bash
-npm run develop     # Start with auto-reload (recommended for development)
-npm run dev        # Alias for develop
+yarn develop     # Start with auto-reload (recommended for development)
+yarn dev        # Alias for develop
 ```
 
 ### Production
 ```bash
-npm run build      # Build admin panel for production
-npm run start      # Start without auto-reload (production mode)
+yarn build      # Build admin panel for production
+yarn start      # Start without auto-reload (production mode)
 ```
 
 ### Strapi CLI
 ```bash
-npm run strapi [command]  # Access Strapi CLI commands
-npm run console           # Open Strapi console
+yarn strapi [command]  # Access Strapi CLI commands
+yarn console           # Open Strapi console
 ```
 
 ### Deployment
 ```bash
-npm run deploy     # Deploy using Strapi Cloud
+yarn deploy     # Deploy using Strapi Cloud
 ```
 
 ### Maintenance
 ```bash
-npm run upgrade         # Upgrade to latest Strapi version
-npm run upgrade:dry     # Preview upgrade changes without applying
+yarn upgrade         # Upgrade to latest Strapi version
+yarn upgrade:dry     # Preview upgrade changes without applying
 ```
 
 ## Environment Configuration
@@ -120,9 +120,16 @@ Content types are defined in `src/api/[content-type-name]/content-types/[content
 - Users & Permissions plugin for authentication
 - Custom plugins can be added to `config/plugins.ts`
 
-## Node.js Requirements
+## Development Requirements
 - Node.js version: >=18.0.0 <=22.x.x
-- npm version: >=6.0.0
+- **Yarn**: This project uses Yarn as the package manager
+- Yarn version: Modern Yarn (v3/v4) with Plug'n'Play enabled
+
+### Important: Always Use Yarn
+This project is configured to use Yarn exclusively. Do not use npm commands. The project uses:
+- Yarn 4.5.0 with Plug'n'Play (PnP) for faster installs and better dependency management
+- `.yarnrc.yml` configuration file for consistent behavior across environments
+- `yarn.lock` file for deterministic dependency resolution
 
 ## Development Notes
 

@@ -11,8 +11,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
-    "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade": "yarn dlx @strapi/upgrade latest",
+    "upgrade:dry": "yarn dlx @strapi/upgrade latest --dry"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.23.6",
@@ -32,8 +32,9 @@
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
-    "npm": ">=6.0.0"
+    "yarn": ">=3.0.0"
   },
+  "packageManager": "yarn@4.5.0",
   "strapi": {
     "uuid": "4a1b5e66-9409-433c-a484-62ee92e33624",
     "installId": "6ac5037c730b481163f13567869390bb0523fc875546180c2ad77cbea96b17ff"
